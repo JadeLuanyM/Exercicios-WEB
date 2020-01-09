@@ -1,0 +1,38 @@
+<!-- Usando o evento onLoad, faça uma função que ao carregar a página solicte o nome do
+internauta e mostre na página o nome do usuário e a mensagem (“Bom dia! Ou Boa Tarde! ou
+Boa Noite!) de acordo com o horário de acesso a página. -->
+<!DOCTYPE html>
+<html lang="pt">
+    <title>Revisao 03</title>
+    <meta charset="utf-8">
+    <script>
+        var nome = prompt("Digite seu nome por favor");
+        var data = new Date();
+        var hora = data.getHours();
+        
+        function horario(){
+            
+            if (hora < 12 && hora > 5) {
+                var bd = "Bom dia";
+                return bd;
+            } else if (hora >= 12 && hora < 18){
+                var bt = "Boa tarde";
+                return bt;
+            } else if (hora >= 18 && hora < 0){
+                var bn = "Boa noite";
+                return bn;
+            } else if (hora => 0 && hora < 5){
+                var bm = "Boa madrugada";
+                return bm;
+            }
+        }
+        
+        document.write(horario() + " " + nome + "!");
+        
+        
+    </script>
+    <body>
+        
+        
+    </body>
+</html>

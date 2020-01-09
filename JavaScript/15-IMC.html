@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Calcule o IMC onde o valor do mesmo é o valor do peso sobre a altura². -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Calculo do IMC</title>
+    </head>
+    <body>
+        <script>
+            var peso, imc, altura;
+            peso=Number.parseFloat(prompt("Digite seu peso"));
+            altura=Number.parseFloat(prompt("Digite sua altura"));
+            imc=(peso/(altura*altura));
+            if(imc<=18.5){
+                alert("O IMC é: " + imc.toFixed(2));
+                document.write("\n \n Resultado: Abaixo do peso normal");
+                
+            } else if((imc>=18.5) && (imc<=25)){
+                alert("O IMC é: " + imc.toFixed(2));
+                 document.write("\n \n Resultado: Peso normal");
+            } else if((imc>=25) && (imc<=30)){
+                alert("O IMC é: " + imc.toFixed(2));
+                 document.write("\n \n Resultado: Acima do peso normal");
+            } else {
+                alert("O IMC é: " + imc.toFixed(2));
+                 document.write("\n \n Resultado: Obesidade"); 
+            }
+            
+            
+        </script>
+    </body>
+</html>
