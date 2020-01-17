@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Elabre um algoritmo que dada a idade de um nadador classifique-o em uma das seguintes
+categorias: 
+Infantil A = 5 a 7 anos
+Infantil B = 8 a 11 anos
+Juvenil A = 12 a 13 anos
+Juvenil B = 14 a 17 anos
+Adultos = Maiores de 18 anos-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Classificação categorias</title>
+    </head>
+    <body>
+        <script>
+            var id; var cat;
+            id = Number(prompt("Digite a sua idade: ",0));
+             alert("O teste só funciona apartir de 5 anos até 20 anos !! ");
+            switch (id) {
+                case 5:
+                case 6:
+                case 7:
+                     cat = "Infantil A"
+                    break;
+                case 8:
+                    case 9:
+                    case 10:
+                 case 11:
+                     cat = "Infantil B"
+                    break;  
+                 case 12:
+                 case 13:
+                     cat = "Juvenil A"
+                    break;    
+                 case 14:
+                   case 15:
+                     case 16:
+                 case 17:
+                     cat = "Juvenil B"
+                    break;  
+                 case 18:
+                  case 19:
+                    case 20:
+                     cat = "Adultos"
+                    break;    
+            }
+            
+            
+            document.write("Sua categoria é  "+cat);
+        </script>
+    </body>
+</html>

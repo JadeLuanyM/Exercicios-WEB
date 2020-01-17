@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- O custo ao consumidor de um carro novo é a soma do preço de fábrica com o percentual de lucro do
+distribuidor e dos impostos aplicados ao preço de fábrica. Faça um programa que receba o preço de fábrica
+de um veículo, o percentual de lucro do distribuidor e o percentual de impostos, calcule e mostre: a) o valor correspondente ao lucro do distribuidor;
+b) o valor correspondente aos impostos;
+c) o preço final do veículo.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício 09</title>
+    </head>
+    <body>
+        <script>
+            var pfv; var plds; var pdis; var cn; var pld; var pdi;
+            pfv = Number.parseFloat(prompt("Digite o preço de fábrica do veículo: ",0));
+        plds= Number.parseFloat(prompt("Digite o percentual de lucro do distribuidor: ",0));
+        pdis = Number.parseFloat(prompt("Digite o percentual de impostos: ",0));
+        pdi = pfv*(pdis/100);
+        pld = pfv*(plds/100);                         
+        cn = (pfv+pld+pdi);
+            document.write("O lucro do distribuidor é de R$"+pld.toFixed(2));
+             document.write("\n O lucro corresponde aos impostos é de R$"+pdi.toFixed(2));
+            document.write("\n O preço final do carro é de R$"+cn.toFixed(2));
+            
+        </script>
+    </body>
+</html>

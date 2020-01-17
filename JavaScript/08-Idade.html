@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
+a) a idade dessa pessoa;
+b) quantos anos ela terá em 2050 -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício 08</title>
+    </head>
+    <body>
+        <script>
+            var an; var aa; var id; var id50;
+            an = Number(prompt("Digite o seu ano de nascimento: ",0));
+            aa = Number(prompt("Digite o ano atual: ",0));
+            id = (aa - an);
+            id50 = 2050 - an;
+            document.write("A sua idade atual é de "+id);
+            document.write("\n Em 2050, você terá "+id50);
+        </script>
+    </body>
+</html>

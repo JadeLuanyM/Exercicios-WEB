@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- Faça um programa que receba o salário base de um funcionário, calcule e mostre o salário a receber, sabendo-se
+que o funcionário tem gratificação de 5% sobre o salário base e paga imposto de 7% também sobre o salário
+base..-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício 06</title>
+    </head>
+    <body>
+        <script>
+            var sa; var sn; var total; var imp;
+            sa = Number.parseFloat(prompt("Digite o valor do salário atual: ",0));
+            sn = sa * 1.05;
+            imp = (sn*(7/100));
+            total = (sn - imp);
+            document.write("O salário novo é de R$"+total.toFixed(2));
+        </script>
+    </body>
+</html>
